@@ -22,3 +22,4 @@ assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), true); // => should FAIL
 assertEqual(eqArrays(['close', 1, 2, 3], [1, 2, 3]), true); // => should FAIL
 assertEqual(eqArrays(['butts', 'bears', 'bananas'], ['butts', 'bears', 'bananas']), true); // => should PASS
+assertEqual(eqArrays([], []), true); // => should PASS

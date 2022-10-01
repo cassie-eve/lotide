@@ -1,9 +1,9 @@
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`✅ Assertion Passed: ${arr1} is equal to ${arr2}!`);
+    console.log(`✅ Assertion Passed: ${arr1} === ${arr2}!`);
   } else {
-    console.log(`❌ Assertion Failed: ${arr1} is NOT equal to ${arr2}`);
+    console.log(`❌ Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
 
@@ -19,9 +19,9 @@ const eqArrays = function(first, second) {
   }
 };
 
-const flatten = function(nestedArray){
+const flatten = function(nestedArray) {
   let newArr = [];
-  for (let item of nestedArray){
+  for (let item of nestedArray) {
     if (Array.isArray(item)) {
       for (let i of item) {
         newArr.push(i);

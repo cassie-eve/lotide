@@ -18,7 +18,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-
 const middle = function(array) {
   if (array.length <= 2) {
     return [];
@@ -29,7 +28,7 @@ const middle = function(array) {
   }
 };
 
-assertArraysEqual(middle([1,2,3]), [2]); // Pass
-assertArraysEqual(middle(['banana', 'coconut', 'strawberry']), ['coconut']); // Pass
-assertArraysEqual(middle([23, 43, 12, 3, 8]), [84, 12]); // Fail
-assertArraysEqual(middle([23, 43, 84, 12, 3, 8]), [84, 12]); // Pass
+assertArraysEqual(middle([1,2,3]), [2]);
+assertArraysEqual(middle(['banana', 'coconut', 'strawberry']), ['coconut']);
+assertArraysEqual(middle([23, 43, 12, 3, 8]), [12]);
+assertArraysEqual(middle([23, 43, 84, 12, 3, 8]), [84, 12]);

@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// Count the letters in each string displayed in an object
 
 const countLetters = function(string) {
   const results = {};
@@ -18,7 +12,5 @@ const countLetters = function(string) {
   }
   return results;
 };
-
-console.log(countLetters('butts butts'));
 
 module.exports = countLetters;

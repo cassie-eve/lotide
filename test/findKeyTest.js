@@ -1,6 +1,7 @@
 const assert = require('chai').assert;
 const findKey = require('../findKey');
 
+// Test code
 describe("#findKey", () => {
   const myObjects = {
     "Blue Hill": { stars: 1 },

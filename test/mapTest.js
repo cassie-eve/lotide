@@ -1,6 +1,7 @@
 const assert = require('chai').assert;
 const map = require('../map');
 
+// Test code
 describe("#map", () => {
   it("first letter of each word should return  'g', 'c', 't', 'm', 't' ", () => {
     const words = ["ground", "control", "to", "major", "tom"];

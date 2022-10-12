@@ -1,6 +1,7 @@
 const assert = require('chai').assert;
 const letterPositions = require('../letterPositions');
 
+// Test code
 describe("#letterPositions", () => {
   it("should return 1 as the first e is in index 1", () => {
     assert.deepEqual(letterPositions("hello").e, [1]);

@@ -6,6 +6,6 @@ describe("#flatten", () => {
     assert.deepEqual(flatten([1,[2,3],4]), [1, 2, 3, 4]);
   });
   it("the arrays should flatten to [1,2,3,4,5,6]", () => {
-    assert.deepEqual(flatten(flatten([1, 2, [3, 4], 5, [6]])), [1, 2, 3, 4, 5, 6]);
+    assert.deepEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
   });
 });

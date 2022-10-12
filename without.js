@@ -1,22 +1,4 @@
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅ Assertion Passed: ${arr1} === ${arr2}!`);
-  } else {
-    console.log(`❌ Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
-const eqArrays = function(first, second) {
-  if (first.length === second.length) {
-    for (let i = 0; i <= first.length; i++) {
-      if (first[i] === second[i]) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  }
-};
+// Takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array
 
 const without = function(source, itemsToRemove) {
   let newArr = [];
@@ -29,9 +11,3 @@ const without = function(source, itemsToRemove) {
 };
 
 module.exports = without;
-
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);

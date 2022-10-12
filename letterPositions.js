@@ -1,22 +1,4 @@
-const eqArrays = function(first, second) {
-  if (first.length === second.length) {
-    for (let i = 0; i <= first.length; i++) {
-      if (first[i] === second[i]) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  }
-};
-
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// find the index of string where a letter first shows up
 
 const letterPositions = function(sentence) {
   const results = {};
@@ -32,6 +14,3 @@ const letterPositions = function(sentence) {
 };
 
 module.exports = letterPositions;
-
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("butts").u, [1]);

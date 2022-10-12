@@ -1,4 +1,4 @@
-// find the appropriate key using the value as a parameter
+// Find the appropriate key using the value as a parameter
 
 const findKeyByValue = function(object, value) {
   for (let key of Object.keys(object)) {

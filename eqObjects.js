@@ -1,4 +1,5 @@
 // Compare the difference between two objects
+
 const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {

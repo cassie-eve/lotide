@@ -1,6 +1,7 @@
 const assert = require('chai').assert;
 const countLetters = require('../countLetters');
 
+// Test code
 describe("#countLetters", () => {
   it("returns { b: 2, u: 2, t: 4, s: 2 } for 'butts butts'", () => {
     assert.deepEqual(countLetters('butts butts'), { b: 2, u: 2, t: 4, s: 2 });

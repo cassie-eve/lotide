@@ -30,6 +30,8 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
+
 assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]);
 assertArraysEqual(map(superheroes, str => str.slice(0, -3)), ['bat', 
 'super', 'spider']);

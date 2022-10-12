@@ -20,3 +20,5 @@ const countLetters = function(string) {
 };
 
 console.log(countLetters('butts butts'));
+
+module.exports = countLetters;

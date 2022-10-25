@@ -3,7 +3,7 @@
 const takeUntil = function(array, callback) {
   const newArr = [];
   for (let arr of array) {
-    if (!arr === callback(arr)) {
+    if (false === callback(arr)) {
       newArr.push(arr);
     } else {
       break;

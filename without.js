@@ -2,9 +2,9 @@
 
 const without = function(source, itemsToRemove) {
   let newArr = [];
-  for (const arr of source) {
-    if (!itemsToRemove.includes(arr)) {
-      newArr.push(arr);
+  for (const item of source) {
+    if (!itemsToRemove.includes(item)) {
+      newArr.push(item);
     }
   }
   return newArr;
